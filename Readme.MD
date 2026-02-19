@@ -1,27 +1,24 @@
-# Electro - Free Bootstrap 5 eCommerce Template 
+# HARIT SENA 
 
-- [Demo](https://themewagon.github.io/iStudio/)
+## About The Project
 
-#### Download
+Harit Sena is a web-based waste management system that allows users to request segregated waste pickup and earn rewards through a leaderboard system.
 
-- [Download from ThemeWagon](https://themewagon.com/themes/istudio/)
+## ✨ Features
+- Waste pickup request
+- Reward points system
+- Leaderboard
+- Responsive UI
 
-## Getting Started
+## Tech Stack
+- HTML
+- CSS
+- Bootstrap
 
-Clone Repository
 
-```
-https://github.com/themewagon/iStudio.git
-```
+##  Author
+-**Chinmayee Burte**
+GitHub: https://github.com/Chinmayee259
 
-## Author
-
-```
-The template is developed by Team HTML Codex.
-```
-
-## License
-
-- Design and Code is Copyright &copy; [HTML Codex](https://htmlcodex.com/).
-- Licensed cover under [MIT]
-- Distributed by [ThemeWagon](https://themewagon.com)
+-**Atul Sangale**
+GitHub: https://github.com/Prossin18
