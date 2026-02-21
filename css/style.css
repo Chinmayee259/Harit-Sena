@@ -52,6 +52,15 @@
     font-weight: normal;
 }
 
+.hs-cta-btn{
+    box-shadow: 0 6px 15px rgba(25, 135, 84, 0.3);
+    transition: all 0.3 ease;
+}
+
+.hs-cta-btn:hover{
+    transform: translateY(-4px) !important
+}
+
 
 /*** Navbar ***/
 .sticky-top {
@@ -123,7 +132,7 @@
 .hero-header {
     margin-top: -100px;
     padding-top: 150px;
-    background: url(../img/hero-bg.jpg) top center no-repeat;
+    background: url(../img/bg-img.png) top center no-repeat;
     background-size: cover;
 }
 
