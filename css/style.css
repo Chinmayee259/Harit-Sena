@@ -421,8 +421,12 @@
 
 /*** Newsletter ***/
 .newsletter {
-    background: url(../img/hero-bg.jpg) bottom right no-repeat;
-    background-size: cover;
+    background: url(../img/bg-img-2.jpeg) bottom right no-repeat;
+    background-size: contain;
+}
+
+.newsletter h1{
+    color: white;
 }
 
 @media (min-width: 992px) {
