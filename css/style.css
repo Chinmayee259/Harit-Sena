@@ -211,7 +211,25 @@
     background-size: contain;
 }
 
+/* Makes both images the same height and prevents distortion */
+.what-we-do img {
+  width: 100%;
+  height: 380px;        /* adjust height as needed (360–420px usually works well) */
+  object-fit: cover;    /* crops edges if needed, keeps image looking neat */
+  border-radius: 8px;   /* optional – gives smooth rounded corners */
+}
 
+/* If images are side-by-side inside a column */
+.what-we-do {
+  display: flex;
+  gap: 15px;            /* space between images */
+}
+
+@media (max-width: 768px) {
+  .what-we-do img {
+    height: 250px;      /* smaller height for mobile */
+  }
+}
 /*** Project ***/
 .project-item img {
     transition: .5s;
@@ -232,10 +250,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background: linear-gradient(rgba(255, 255, 255, .1) 50%, var(--bs-dark));
     z-index: 1;
 }
-
 
 /*** Service ***/
 .service-item {
@@ -271,31 +287,31 @@
 }
 
 
-.service-item .service-img h3 {
+.service-item .service-img h5 {
     position: absolute;
     top: 0;
     left: 0;
     padding: 0 12px 7px 0;
 }
 
-.service-item.bg-primary .service-img h3 {
+.service-item.bg-primary .service-img h5 {
     background: var(--bs-primary);
     color: var(--bs-white);
     transition: .5s;
 }
 
-.service-item.bg-primary:hover .service-img h3 {
+.service-item.bg-primary:hover .service-img h5 {
     background: var(--bs-light);
     color: var(--bs-dark);
 }
 
-.service-item.bg-light .service-img h3 {
+.service-item.bg-light .service-img h5 {
     background: var(--bs-light);
     color: var(--bs-dark);
     transition: .5s;
 }
 
-.service-item.bg-light:hover .service-img h3 {
+.service-item.bg-light:hover .service-img h5 {
     background: var(--bs-primary);
     color: var(--bs-white);
 }
