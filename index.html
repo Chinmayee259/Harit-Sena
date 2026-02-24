@@ -100,11 +100,58 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4 animated slideInRight text-success">Together for a <span style="color:#1B5E20";>Greener Future</span></h1>
-                    <h5 class="d-inline-block border border-2 border-success py-3 px-4 mb-4 animated slideInRight" style="background-color:#ffffffa8";>
-                        Join Harit Sena &ndash; The Green Army of Clean India</h5>
-                        <p class="text-dark mb-4">We are a volunteer-driven movement planting trees, protecting forests, and spreading awareness about sustainable living.</p>
-                        <a href="about.html" class="btn btn-success py-2 px-4 me-3 animated slideInRight" id="btn-request">Request pickup</a>
+                    <div class="wow fadeIn" data-wow-delay="0.3s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                            <option selected>Select the type of waste</option>
+                                            <option value="1">Plastic waste</option>
+                                            <option value="2">Wet waste</option>
+                                            <option value="3">Paper/Cardboard waste</option>
+                                            <option value="3">E-waste</option>
+                                        </select>
+                                        <label for="floatingSelect">Type of waste</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                            <option selected>Select the weight of waste</option>
+                                            <option value="1">2 kg</option>
+                                            <option value="2">4 kg</option>
+                                            <option value="3">6 kg</option>
+                                            <option value="3">8 kg</option>
+                                        </select>
+                                        <label for="floatingSelect">Weight of waste</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Request a pickup</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="owl-carousel header-carousel animated fadeIn">
