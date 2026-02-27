@@ -11,6 +11,9 @@
     <!-- Favicon -->
     <link href="img/harit_sena_logo.png" rel="icon">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,18 +60,40 @@
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Initiavtives</a>
-                        <a href="project.html" class="nav-item nav-link">Request Pickup</a>
+                        <a href="Initiatives.html" class="nav-item nav-link">Initiatives</a>
                         <div class="nav-item dropdown">
-                            <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Eco Achievements</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="feature.html" class="dropdown-item">Recycling Partners</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Leaderboard</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="Rewards.html" class="dropdown-item">Rewards</a>
+                                <a href="Leaderboard.html" class="dropdown-item">Leaderboard</a>
+                                <a href="Certificates.html" class="dropdown-item">Certificates</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Request Pickup</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="#" class="dropdown-item">Household waste</a>
+                                <a href="#" class="dropdown-item">Bulk waste</a>
+                                <a href="#" class="dropdown-item">Commercial waste</a>
+                                <a href="#" class="dropdown-item">Plastic waste</a>
+                                <a href="#" class="dropdown-item">Other</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item dropdown">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-4"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                                <li><a class="dropdown-item" href="Login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="Signup.html">Sign Up</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Profile.html">Profile</a></li>
+                                </ul>
+                            </li>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -79,54 +104,119 @@
 
     <!-- Hero Start -->
     <div class="container-fluid pb-5 hero-header bg-light mb-5">
-        <div class="container py-5">
+        <div class="container">
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4 animated slideInRight text-success">Together for a <span style="color:#1B5E20";>Greener Future</span></h1>
-                    <h5 class="d-inline-block border border-2 border-success py-3 px-4 mb-4 animated slideInRight" style="background-color:#ffffffa8";>
+                    <div class="wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-4 fw-bold mb-2 animated slideInRight text-success">Together for a <span style="color:#1B5E20";>Greener Future</span></h1>
+                        <h5 class="d-inline-block border border-2 border-success py-3 px-4 mb-2 animated slideInRight" style="background-color:#ffffffa8";>
                         Join Harit Sena &ndash; The Green Army of Clean India</h5>
-                        <p class="text-dark mb-4">Schedule segregated, bulk, bio, or commercial waste pickup and earn rewards for responsible disposal..</p>
-                        <a href="about.html" class="btn btn-success py-2 px-4 me-3 animated slideInRight hs-cta-btn">Send a pickup request</a>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                            <option selected>Select the type of waste</option>
+                                            <option value="1">Plastic waste</option>
+                                            <option value="2">Wet waste</option>
+                                            <option value="3">Paper/Cardboard waste</option>
+                                            <option value="3">E-waste</option>
+                                        </select>
+                                        <label for="floatingSelect">Type of waste</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                            <option selected>Select the weight of waste</option>
+                                            <option value="1">2 kg</option>
+                                            <option value="2">4 kg</option>
+                                            <option value="3">6 kg</option>
+                                            <option value="3">8 kg</option>
+                                        </select>
+                                        <label for="floatingSelect">Weight of waste</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Request a pickup</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="owl-carousel header-carousel animated fadeIn">
-                        <img class="img-fluid rounded-3" src="img/hero-slider-1.jpg" alt="">
-                        <img class="img-fluid rounded-3" src="img/hero-slider-2.jpg" alt="">
-                        <img class="img-fluid rounded-3" src="img/hero-slider-3.jpg" alt="">
+                        <img class="img-fluid rounded-3" src="img/Img1.png" alt="">
+                        <img class="img-fluid rounded-3" src="img/Img2.png" alt="">
+                        <img class="img-fluid rounded-3" src="img/Img3.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="row g-5 animated fadeIn">
-                <div class="col-md-6 col-lg-3">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0 btn-square me-3">
-                            <img src="img/Housewaste.png" alt="Household waste" style="height: 150px; width: 150px;" class="pe-4">
+                <!-- Plastic Waste -->
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="flex-shrink-0 btn-square border border-2 border-success mb-3">
+                            <i class="fa fa-recycle text-success fa-lg"></i>
                         </div>
-                        <h5 class="lh-base mb-0">Household Segregated Waste</h5>
+                        <h5 class="lh-base mb-2">Plastic Waste</h5>
+                        <p class="text-muted small mb-0">
+                            Recycle bottles, wrappers, and containers responsibly to reduce pollution.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0 btn-square me-3">
-                            <img src="img/BulkWaste.png" alt="Bulk waste" style="height: 130px; width: 120px;" class="pe-4">
+                <!-- Wet Waste -->
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="flex-shrink-0 btn-square border border-2 border-success mb-3">
+                            <i class="fa fa-leaf text-success fa-lg"></i>
                         </div>
-                        <h5 class="lh-base mb-0">Bulk Segregated Waste</h5>
+                        <h5 class="lh-base mb-2">Wet Waste</h5>
+                        <p class="text-muted small mb-0">
+                            Compost kitchen and garden waste to create organic fertilizer.
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0 btn-square me-3">
-                            <img src="img/Biowaste.png" alt="Bio waste" style="height: 130px; width: 120px;" class="pe-4">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="flex-shrink-0 btn-square border border-2 border-success mb-3">
+                            <i class="fa fa-dumpster text-success fa-lg"></i>
                         </div>
-                        <h5 class="lh-base mb-0">Bio/Organic Segregated Waste</h5>
+                        <h5 class="lh-base mb-2">Bulk Waste</h5>
+                        <p class="text-muted small mb-0">
+                            Safe collection of furniture, mattresses, and large household debris.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0 btn-square border border-2 border-white me-3">
-                            <img src="img/Commercial.png" alt="Commercial waste" style="height: 100px; width: 100px;" class="pe-4">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="flex-shrink-0 btn-square border border-2 border-success mb-3">
+                            <i class="fa fa-building text-success fa-lg"></i>
                         </div>
-                        <h5 class="lh-base mb-0">Commercial Segregated Waste</h5>
+                        <h5 class="lh-base mb-2">Commercial Waste</h5>
+                        <p class="text-muted small mb-0">
+                            Pickup for offices and shops ensuring proper disposal and recycling.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -138,47 +228,58 @@
     <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 align-items-center">
+                <!-- Left Side Images + Points -->
                 <div class="col-lg-6">
-                    <div class="row">
+                    <div class="row g-3">
+                        <!-- Images -->
                         <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-1.jpg" alt="">
+                            <div class="what-we-do">
+                                <img class="img-fluid rounded" src="img/Community waste.png" alt="Waste Collection Image">
+                            </div>
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid h-75" src="img/about-2.jpg" alt="">
-                            <div class="h-25 d-flex align-items-center text-center bg-primary px-4">
-                                <h4 class="text-white lh-base mb-0">Award Winning Studio Since 1990</h4>
+                            <div class="what-we-do">
+                                <img class="img-fluid rounded" src="img/Leaderboard.png" alt="Community Drive Image">
                             </div>
+                        </div>
+
+                        <!-- Points (below images) -->
+                        <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Waste Pickup Requests</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Rewards & Leaderboard</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Segregation Awareness</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Volunteer Opportunities</h6>
+                        </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Right Side Text -->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="mb-5"><span class="text-uppercase text-primary bg-light px-2">History</span> of Our
-                        Creation</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <p class="mb-5">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                        labore lorem sit. Sanctus clita duo justo et tempor.</p>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                        </div>
-                    </div>
+                    <h1 class="mb-5"><span class="text-uppercase text-success bg-light px-2">What We Do</span> Turning Waste Management into a Rewarding Habit</h1>
+
+                    <p class="mb-4">At <strong>Harit Sena</strong>, we make waste management simple, responsible, and rewarding.</p>
+
+                    <p class="mb-4">pickup for their segregated waste directly from our website. Our team ensures each type — plastic, wet, bulk, or commercial — is collected responsibly and sent for proper recycling or processing.</p>
+
+                    <p class="mb-4">We encourage segregation through incentives and rewards. Citizens earn points based on the quality of segregation and weight of the waste, and their efforts are recognized on a community leaderboard.</p>
+
+                    <p class="mb-4">Along with waste collection, Harit Sena regularly organizes awareness campaigns and community drives to promote environmental responsibility and sustainable living among citizens.</p>
+                    
+                    <!-- Buttons -->
                     <div class="d-flex align-items-center mt-5">
-                        <a class="btn btn-primary px-4 me-2" href="#!">Read More</a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                        <a class="btn btn-success px-4 me-2" href="#!">Read More</a>
+                        <a class="btn btn-outline-success btn-square border-2 me-2" href="#!"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                        <a class="btn btn-outline-success btn-square border-2 me-2" href="#!"><i
                                 class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                        <a class="btn btn-outline-success btn-square border-2 me-2" href="#!"><i
                                 class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2" href="#!"><i
+                        <a class="btn btn-outline-success btn-square border-2" href="#!"><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -192,45 +293,28 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="text-center wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="mb-5">Why People <span class="text-uppercase text-primary bg-light px-2">Choose Us</span>
+                <h1 class="mb-5">Why People <span class="text-uppercase text-primary bg-light px-2">Choose Harit Sena</span>
                 </h1>
             </div>
             <div class="row g-5 align-items-center text-center">
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-calendar-alt fa-5x text-primary mb-4"></i>
-                    <h4>25+ Years Experience</h4>
-                    <p class="mb-0">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                        justo et tempor eirmod magna dolore erat amet</p>
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-leaf fa-5x text-primary mb-4"></i>
+                    <h4>Strong Environmental Commitment</h4>
+                    <p class="mb-0">Harit Sena has been dedicated to building a sustainable future through tree plantation, water conservation, and awareness drives that inspire real change</p>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-tasks fa-5x text-primary mb-4"></i>
-                    <h4>Best Interior Design</h4>
-                    <p class="mb-0">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                        justo et tempor eirmod magna dolore erat amet</p>
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users fa-5x text-primary mb-4"></i>
+                    <h4>Community-Driven Movement</h4>
+                    <p class="mb-0">We promote eco-friendly practices, waste reduction, and environmental education to create long-term awareness and greener lifestyles.</p>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-pencil-ruler fa-5x text-primary mb-4"></i>
-                    <h4>Innovative Architects</h4>
-                    <p class="mb-0">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                        justo et tempor eirmod magna dolore erat amet</p>
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-handshake fa-5x text-primary mb-4"></i>
+                    <h4>Collaborative Efforts</h4>
+                    <p class="mb-0">We partner with local organizations, schools, and environmental bodies to ensure that every project leads to meaningful, long-lasting results</p>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-user fa-5x text-primary mb-4"></i>
-                    <h4>Customer Satisfaction</h4>
-                    <p class="mb-0">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                        justo et tempor eirmod magna dolore erat amet</p>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-hand-holding-usd fa-5x text-primary mb-4"></i>
-                    <h4>Budget Friendly</h4>
-                    <p class="mb-0">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                        justo et tempor eirmod magna dolore erat amet</p>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-check fa-5x text-primary mb-4"></i>
-                    <h4>Sustainable Material</h4>
-                    <p class="mb-0">Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                        justo et tempor eirmod magna dolore erat amet</p>
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.1s">                    <i class="fa fa-award fa-5x text-primary mb-4"></i>
+                    <h4>Rewards & Recognition</h4>
+                    <p class="mb-0">Our leaderboard system motivates volunteers with points, certificates, and appreciation for their contributions</p>
                 </div>
             </div>
         </div>
@@ -245,66 +329,40 @@
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
                         <h1 class="text-white mb-5">Our Latest <span
-                                class="text-uppercase text-primary bg-light px-2">Projects</span></h1>
-                        <h4 class="text-white mb-0"><span class="display-1">6</span> of our latest projects</h4>
+                                class="text-uppercase text-primary bg-light px-2">Initiatives</span></h1>
+                        <h4 class="text-white mb-0"><span class="display-1">3</span> of our latest community drives</h4>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="row g-0">
                         <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
                             <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-1.jpg" alt="">
+                                <img src="img/Tree-planting.png" class="img-fluid w-100" alt="Tree Plantation">
                                 <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Kitchen</h4>
-                                    <small class="text-white">72 Projects</small>
+                                    <h4 class="text-white">Tree Plantation</h4>
+                                    <small class="text-white">120 Trees Planted</small>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                             <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-2.jpg" alt="">
+                                <img src="img/clean-up.png" class="img-fluid w-100" alt="Clean Up">
                                 <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Bathroom</h4>
-                                    <small class="text-white">67 Projects</small>
+                                    <h4 class="text-white">Clean-Up Drive</h4>
+                                    <small class="text-white">85 Areas Cleaned</small>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
                             <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-3.jpg" alt="">
+                                <img class="img-fluid w-100 h-50" src="img/Plastic-campaign.png" alt="Plastic-Free Campaign">
                                 <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Bedroom</h4>
-                                    <small class="text-white">53 Projects</small>
+                                    <h4 class="text-white">Plastic-Free Campaign</h4>
+                                    <small class="text-white">200 Participants</small>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-4.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Living Room</h4>
-                                    <small class="text-white">33 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-5.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Furniture</h4>
-                                    <small class="text-white">87 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-6.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Rennovation</h4>
-                                    <small class="text-white">69 Projects</small>
-                                </a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -318,21 +376,17 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="mb-5">Our Creative <span
-                            class="text-uppercase text-primary bg-light px-2">Services</span></h1>
-                    <p>Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <p class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <h1 class="mb-5">Our <span
+                            class="text-uppercase text-primary bg-light px-2">Environmental Services</span></h1>
+                    <p>Harit Sena works to create a cleaner and greener community by promoting waste segregation and reducing plastic use. Through awareness programs and local initiatives, we encourage responsible environmental habits.</p>
+                    <p class="mb-5">To boost participation, we offer a Green Rewards Program and a Volunteer Leaderboard. Volunteers earn points for their efforts and gain recognition for making a positive environmental impact.</p>
                     <div class="d-flex align-items-center bg-light">
                         <div class="btn-square flex-shrink-0 bg-primary" style="width: 100px; height: 100px;">
-                            <i class="fa fa-phone fa-2x text-white"></i>
+                            <i class="fa-solid fa-envelope text-white"></i>
                         </div>
                         <div class="px-3">
-                            <h3>+0123456789</h3>
-                            <span>Call us direct 24/7 for get a free consultation</span>
+                            <h4>haritsena2325@gmail.com</h4>
+                            <span>Email us direct 24/7 for Environmental Guidance</span>
                         </div>
                     </div>
                 </div>
@@ -341,41 +395,37 @@
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
                             <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary">
                                 <a href="#!" class="service-img position-relative mb-4">
-                                    <img class="img-fluid w-100" src="img/service-1.jpg" alt="">
-                                    <h3>Interior Design</h3>
+                                    <img class="img-fluid w-100" src="img/Waste segregation.png" alt="">
+                                    <h5>Waste Segregation<br>Awareness</h5>
                                 </a>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet diam sed stet lorem.</p>
+                                <p class="mb-0">Promoting proper waste segregation for a cleaner environment.</p>
                             </div>
                         </div>
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="service-item h-100 d-flex flex-column justify-content-center bg-light">
                                 <a href="#!" class="service-img position-relative mb-4">
-                                    <img class="img-fluid w-100" src="img/service-2.jpg" alt="">
-                                    <h3>Implement</h3>
+                                    <img class="img-fluid w-100" src="img/Plastic-free campaign.png" alt="">
+                                    <h5>Plastic-Free<br>Campaign</h5>
                                 </a>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet diam sed stet lorem.</p>
+                                <p class="mb-0">Encouraging reduction of single-use plastics.</p>
                             </div>
                         </div>
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
                             <div class="service-item h-100 d-flex flex-column justify-content-center bg-light">
                                 <a href="#!" class="service-img position-relative mb-4">
-                                    <img class="img-fluid w-100" src="img/service-3.jpg" alt="">
-                                    <h3>Renovation</h3>
+                                    <img class="img-fluid w-100" src="img/Green rewards.png" alt="">
+                                    <h5>Green Rewards</h5>
                                 </a>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet diam sed stet lorem.</p>
+                                <p class="mb-0">Earn points and recognition for eco-friendly actions.</p>
                             </div>
                         </div>
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.8s">
                             <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary">
                                 <a href="#!" class="service-img position-relative mb-4">
-                                    <img class="img-fluid w-100" src="img/service-4.jpg" alt="">
-                                    <h3>Commercial</h3>
+                                    <img class="img-fluid w-100" src="img/Leaderboard service.png" alt="">
+                                    <h5>Leaderboard</h5>
                                 </a>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet diam sed stet lorem.</p>
+                                <p class="mb-0">Highlighting top contributors to inspire participation.</p>
                             </div>
                         </div>
                     </div>
@@ -385,109 +435,6 @@
     </div>
     <!-- Service End -->
 
-
-    <!-- Team Start -->
-    <div class="container-fluid bg-light py-5">
-        <div class="container py-5">
-            <h1 class="mb-5">Our Professional <span class="text-uppercase text-primary bg-light px-2">Designers</span>
-            </h1>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="team-item position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                        <div class="team-overlay">
-                            <small class="mb-2">Architect</small>
-                            <h4 class="lh-base text-light">Boris Johnson</h4>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="team-item position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                        <div class="team-overlay">
-                            <small class="mb-2">Architect</small>
-                            <h4 class="lh-base text-light">Donald Pakura</h4>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="team-item position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                        <div class="team-overlay">
-                            <small class="mb-2">Architect</small>
-                            <h4 class="lh-base text-light">Bradley Gordon</h4>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="team-item position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                        <div class="team-overlay">
-                            <small class="mb-2">Architect</small>
-                            <h4 class="lh-base text-light">Alexander Bell</h4>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a class="btn btn-outline-primary btn-sm-square border-2 me-2" href="#!">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
 
     <!-- Testimonial Start -->
@@ -500,17 +447,14 @@
                             <div class="row g-5 align-items-center">
                                 <div class="col-md-6">
                                     <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                        <img class="img-fluid" src="img/Priya-mehta.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Sustainable Material</h3>
-                                        <p>Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Boris Johnson</h5>
+                                        <h3>Clean Living Initiative</h3>
+                                        <p>Harit Sena made waste segregation so easy in our society. The Green Rewards system keeps everyone motivated!</p>
+                                        <h5 class="mb-0">Priya Mehta</h5>
                                     </div>
                                 </div>
                             </div>
@@ -519,17 +463,14 @@
                             <div class="row g-5 align-items-center">
                                 <div class="col-md-6">
                                     <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                        <img class="img-fluid" src="img/Rohan-kulkarni.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Customer Satisfaction</h3>
-                                        <p>Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Alexander Bell</h5>
+                                        <h3>Sustainable Habits</h3>
+                                        <p>The reward system truly changed our daily habits. Proud to be part of this movement.</p>
+                                        <h5 class="mb-0">Rohan Kulkarni</h5>
                                     </div>
                                 </div>
                             </div>
@@ -538,17 +479,14 @@
                             <div class="row g-5 align-items-center">
                                 <div class="col-md-6">
                                     <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                        <img class="img-fluid" src="img/Sneha.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Budget Friendly</h3>
-                                        <p>Diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Bradley Gordon</h5>
+                                        <h3>Inspiring Green Action</h3>
+                                        <p>The leaderboard feature encourages healthy competition while helping the environment. Amazing initiative!</p>
+                                        <h5 class="mb-0">Sneha Patil</h5>
                                     </div>
                                 </div>
                             </div>
@@ -566,19 +504,16 @@
         <div class="container p-0">
             <div class="row g-0 align-items-center">
                 <div class="col-md-5 ps-lg-0 text-start wow fadeIn" data-wow-delay="0.2s">
-                    <img class="img-fluid w-100" src="img/newsletter.jpg" alt="">
+                    <img class="img-fluid w-100 m-4"  src="img/harit-sainik.png" alt="">
                 </div>
-                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn text-center" data-wow-delay="0.5s">
                     <div class="p-5">
-                        <h1 class="mb-5">Subscribe the <span
-                                class="text-uppercase text-primary bg-white px-2">Newsletter</span></h1>
-                        <div class="position-relative w-100 mb-2">
-                            <input class="form-control border-0 w-100 ps-4 pe-5" type="text"
-                                placeholder="Enter Your Email" style="height: 60px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-2 me-2"><i
-                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        <h1 class="mb-5">Become the <br><span
+                                class="text-uppercase text-primary bg-white px-2">HARIT SAINIK</span></h1>
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary btn-lg" type="button">Start your journey</button>
                         </div>
-                        <p class="mb-0">Diam sed sed dolor stet amet eirmod</p>
                     </div>
                 </div>
             </div>
@@ -593,17 +528,15 @@
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">iSTUDIO</h1>
+                        <h1 class="text-white">HARIT SENA</h1>
                     </a>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor</p>
+                    <p class="mb-0"></p>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>GK AARKCON, Gaikwad Nagar, Punawale, Pune</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9774948729</p>
+                    <p><i class="fa fa-envelope me-3"></i>haritsena2325@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
                                 class="fab fa-twitter"></i></a>
@@ -623,15 +556,16 @@
                     <a class="btn btn-link" href="#!">Contact Us</a>
                     <a class="btn btn-link" href="#!">Privacy Policy</a>
                     <a class="btn btn-link" href="#!">Terms & Condition</a>
-                    <a class="btn btn-link" href="#!">Career</a>
+                    <a class="btn btn-link" href="#!">Initiatives</a>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="#!">Interior Design</a>
-                    <a class="btn btn-link" href="#!">Project Planning</a>
-                    <a class="btn btn-link" href="#!">Renovation</a>
-                    <a class="btn btn-link" href="#!">Implement</a>
-                    <a class="btn btn-link" href="#!">Landscape Design</a>
+                    <a class="btn btn-link" href="#!">♻️ Waste Collection</a>
+                    <a class="btn btn-link" href="#!">🏆 Reward Program</a>
+                    <a class="btn btn-link" href="#!">🌱 Tree Plantation</a>
+                    <a class="btn btn-link" href="#!">📜 Volunteer Certification</a>
+                    <a class="btn btn-link" href="#!">🧹 Cleanliness Drives</a>
+                    <a class="btn btn-link" href="#!">📢 Awareness Campaigns</a>
                 </div>
             </div>
         </div>
@@ -639,7 +573,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#!">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#!">HARIT SENA</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
