@@ -102,17 +102,567 @@
     </div>
     <!-- Navbar End -->
 
+
+
     <!-- Hero Start -->
     <div class="container-fluid pb-5 hero-header bg-light mb-5">
         <div class="page_title scetion-padding">
             <div class="container">
-                <div class="row">
+                <!-- Rewards Start -->
+                    <!-- Ecopoints heading  -->
+                    <div class="text-white text-center p-5 eco-leader">
+                        <h1> &#127793; EcoPoints</h1>
+                        <p>Earn rewards &#127873; by contributing to a greener future</p>
+                    </div>
+
+                    <!-- Your EcoPoints -->
+                    <div class="container text-center my-5">
+                        <h2>Your EcoPoints</h2>
+                        <h1 class="text-success" id="ecoPoints">0 &#127793;</h1>
+                    </div>
+
+                    <hr>
+
+                    <!-- How to earn EcoPoints -->
+                    <div class="container my-5">
+                        <h3 class="mb-4">How to <span class="text-uppercase text-success bg-light px-2">Earn EcoPoints</span></h3>
+                        <div class="row text-center">
+
+                            <!-- Step 1 -->
+                            <div class="col-md-3">
+                                <h5>♻️ Segregate Waste</h5>
+                                <p>Properly separate waste by type</p>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="col-md-3">
+                                <h5>🚛 Request Pickup</h5>
+                                <p>Schedule waste collection</p>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="col-md-3">
+                                <h5>⚖️ Waste Weight</h5>
+                                <p>More weight = more EcoPoints</p>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="col-md-3">
+                                <h5>⭐ Monthly Bonus</h5>
+                                <p>Extra points for consistency.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    
+                    <!-- Claimed Rewards  -->
+                    <div class="d-flex justify-content-between">
+                         <h2>Exciting Rewards &#127873; for You</h2>
+                        <button type="button" class="btn btn-success ms-3">Claimed Rewards</button>
+                    </div>
+
+                    <hr>
+
+                    <!-- Redeem your rewards -->
+                    <div class="container my-5">
+                        <h3 class="mb-4">Redeem Your Rewards  &#127873; </h3>
+                    </div>
+
+                        <!-- EcoPoints: 15 - 50 -->
+
+                        <div class="d-flex justify-content-between">
+                            <h4>&#127793; EcoPoints: 15 - 50</h4>
+                            <button type="button" class="btn btn-success ms-3">View all</button>
+                        </div>
+
+                        <!-- Rewards slider for EcoPoints: 15 - 50 -->
+
+                        <div class="slider-container">
+                            <!-- SlideLeft Button -->
+                            <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+                            <!-- Reward Slider -->
+                            <div class="slider" id="slider">
+                                <!-- Reward 1 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 2 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 2 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 3 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward  on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 4 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 4 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                
+                                <!-- Reward 5 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 5 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- Reward Slider End -->
+
+                            <!-- SlideRight Button -->
+                            <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+                        </div>
+
+                    <!-- EcoPoints 15 - 50 end -->
+
+                    <hr>
+
+                    <!-- EcoPoints: 50 - 150 -->
+                         
+                        <div class="d-flex justify-content-between">
+                            <h4>&#127793; EcoPoints: 50 - 150</h4>
+                            <button type="button" class="btn btn-success ms-3">View all</button>
+                        </div>
+
+                        <!-- Rewards slider for Ecopoints: 50 - 150 -->
+
+                        <div class="slider-container">
+                            <!-- SlideLeft Button -->
+                            <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+                            <!-- Reward Slider -->
+                            <div class="slider" id="slider">
+                                <!-- Reward 1 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 2 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 2 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 3 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward  on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 4 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 4 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                
+                                <!-- Reward 5 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 5 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- Reward Slider End -->
+
+                            <!-- SlideRight Button -->
+                            <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+                        </div>
+
+                    <!-- EcoPoints 50 - 150 end -->
+
+                    <hr>
+                
+                    <!-- Ecopoints: 150 & above -->
+                         
+                        <div class="d-flex justify-content-between">
+                            <h4>&#127793; EcoPoints: 150 &amp; above</h4>
+                            <button type="button" class="btn btn-success ms-3">View all</button>
+                        </div>
+
+                        <!-- Rewards slider for Ecopoints: 150 & above -->
+
+                        <div class="slider-container">
+                            <!-- SlideLeft Button -->
+                            <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+                            <!-- Reward Slider -->
+                            <div class="slider" id="slider">
+                                <!-- Reward 1 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 2 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 2 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 3 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward  on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <!-- Reward 4 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 4 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                
+                                <!-- Reward 5 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-lock"></i> Not enough EcoPoints
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 5 on clicking the trigger button modal-->
+                                                        <!-- <div class="modal-body"> </div> -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Understood</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- Reward Slider End -->
+
+                            <!-- SlideRight Button -->
+                            <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+                        </div>
+
+                    <!-- EcoPoints 150 & above end -->
+                    
+                    <hr>
+
+
+                <!-- Leaderboard -->
+                 <!-- Leaderboard header -->
+                <div class="row mt-5">
+                    <div class="text-white text-center p-5 eco-leader">
+                        <h1>Leaderboard</h1>
+                    </div>
+
+                    <!-- Top ranking leaderboard -->
                     <div class="col-xl-6">
                         <div class="page_title-content">
-                            <p>Leaderboard</p>
                             <h3>Top Ranking <span class="text-uppercase text-success bg-light px-2">Harit sainik</span></h3>
                         </div>
                     </div>
+
+                    <!-- tabs for alltime , month and week leaders -->
                     <div class="col-xl-6">
                         <div class="leaderboard_tab_link">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -129,188 +679,190 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div> <!--Page title end-->
+                <!--Leaderboard heading end-->
 
-        <!-- Leaderboard -->
-         <div class="leaderboard">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="leaderboard-top-rank">
-                            <div class="top_rank">
-                                <div class="d-flex crown rank_ani1">
-                                    <div class="rank_icon">
-                                    <img src="img/crown.png" alt="" style="height: 36.27; width: 43.71px;">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <span class="circle"></span>
-                                        <h6>First 1</h6>
-                                        <h5>Riya Sharma</h5>
-                                        <p>xyz</p>
-                                    </div>
-                                    <div class="prize">
-                                        <h4>9.800</h4>
-                                        <div class="prize_gem">
-                                            <span>Prize</span>
-                                            <img src="img/gem.png" alt="" style="height: 25px; width: 24px;">
-                                        </div>
-                                    </div>
-                                </div>
+                <!-- Leaderboard Content-->
+                <div class="leaderboard">
+                    <div class="container">
+                        <!-- Toatal leaderboard container -->
+                        <div class="row">
 
-                                <div class="d-flex cup rank_ani2">
-                                    <div class="rank_icon">
-                                        <img src="img/trophy.png" alt="" style="height: 36.27; width: 43.71px;">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <span class="circle"></span>
-                                        <h6>First 2</h6>
-                                        <h5>Amit Kumar</h5>
-                                        <p>xyz</p>
-                                    </div>
-                                    <div class="prize">
-                                        <h4>9.800</h4>
-                                        <div class="prize_gem">
-                                            <span>Prize</span>
-                                            <img src="img/gem.png" alt="" style="height: 25px; width: 24px;">
+                            <!-- Half for top rankers -->
+                            <div class="col-xl-6">
+                                <div class="leaderboard-top-rank">
+                                    <!-- Top rankers -->
+                                    <div class="top_rank">
+                                        <!-- Rank 1 -->
+                                        <div class="d-flex crown rank_ani1">
+                                            <!-- Crown -->
+                                            <div class="rank_icon">
+                                            <img src="img/crown.png" alt="" style="height: 36.27; width: 43.71px;">
+                                            </div>
+                                            <!-- Info -->
+                                            <div class="flex-grow-1">
+                                                <span class="circle"></span>
+                                                <h6>Harit Sainik 1</h6>
+                                                <h5>Riya Sharma</h5>
+                                                <p>Pune</p>
+                                            </div>
+                                            <!-- Ecopoints -->
+                                            <div class="prize">
+                                                <h4>500&#127793;</h4>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="d-flex medal rank_ani2">
-                                    <div class="rank_icon">
-                                        <img src="img/medal.png" alt="" style="height: 36.27; width: 43.71px;">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <span class="circle"></span>
-                                        <h6>First 1</h6>
-                                        <h5>Geeta Jain</h5>
-                                        <p>xyz</p>
-                                    </div>
-                                    <div class="prize">
-                                        <h4>9.800</h4>
-                                        <div class="prize_gem">
-                                            <span>Prize</span>
-                                            <img src="img/gem.png" alt="" style="height: 25px; width: 24px;">
+                                        <!-- Rank 2 -->
+                                        <div class="d-flex cup rank_ani2">
+                                            <!-- Trophy -->
+                                            <div class="rank_icon">
+                                                <img src="img/trophy.png" alt="" style="height: 36.27; width: 43.71px;">
+                                            </div>
+                                            <!-- Info -->
+                                            <div class="flex-grow-1">
+                                                <span class="circle"></span>
+                                                <h6>Harit Sainik 2</h6>
+                                                <h5>Amit Kumar</h5>
+                                                <p>Nashik</p>
+                                            </div>
+                                            <!-- Ecopoints -->
+                                            <div class="prize">
+                                                <h4>460&#127793;</h4>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="leaderboard_content">
-                            <div class="leaderboard_tab">
-                                <div class="tab_content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="alltime">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Place</th>
-                                                        <th scope="col">User</th>
-                                                        <th scope="col">
-                                                            Credit
-                                                            <img src="" alt="">
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">04</th>
-                                                        <td class="user_circle">
-                                                            <span class="circle user1"></span>
-                                                            <span>Raj Mane</span>
-                                                        </td>
-                                                        <td>
-                                                            13.200
-                                                            <img src="" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">04</th>
-                                                        <td class="user_circle">
-                                                            <span class="circle user1"></span>
-                                                            <span>Raj Mane</span>
-                                                        </td>
-                                                        <td>
-                                                            13.200
-                                                            <img src="" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">04</th>
-                                                        <td class="user_circle">
-                                                            <span class="circle user1"></span>
-                                                            <span>Raj Mane</span>
-                                                        </td>
-                                                        <td>
-                                                            13.200
-                                                            <img src="" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">04</th>
-                                                        <td class="user_circle">
-                                                            <span class="circle user1"></span>
-                                                            <span>Raj Mane</span>
-                                                        </td>
-                                                        <td>
-                                                            13.200
-                                                            <img src="" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">04</th>
-                                                        <td class="user_circle">
-                                                            <span class="circle user1"></span>
-                                                            <span>Raj Mane</span>
-                                                        </td>
-                                                        <td>
-                                                            13.200
-                                                            <img src="" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">04</th>
-                                                        <td class="user_circle">
-                                                            <span class="circle user1"></span>
-                                                            <span>Raj Mane</span>
-                                                        </td>
-                                                        <td>
-                                                            13.200
-                                                            <img src="" alt="">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">04</th>
-                                                        <td class="user_circle">
-                                                            <span class="circle user1"></span>
-                                                            <span>Raj Mane</span>
-                                                        </td>
-                                                        <td>
-                                                            13.200
-                                                            <img src="" alt="">
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+
+                                        <!-- Rank 3 -->
+                                        <div class="d-flex medal rank_ani2">
+                                            <!-- Medal -->
+                                            <div class="rank_icon">
+                                                <img src="img/medal.png" alt="" style="height: 36.27; width: 43.71px;">
+                                            </div>
+                                            <!-- Info -->
+                                            <div class="flex-grow-1">
+                                                <span class="circle"></span>
+                                                <h6>Harit Sainik 3</h6>
+                                                <h5>Geeta Jain</h5>
+                                                <p>Mumbai</p>
+                                            </div>
+                                            <!-- Ecopoints -->
+                                            <div class="prize">
+                                                <h4>380&#127793;</h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="load_more">
-                                <a href="#">Load More</a>
+                            <!-- Half for top rankers end -->
+
+                            <!-- Half for board -->
+                            <div class="col-xl-6">
+                                <div class="leaderboard_content">
+                                    <div class="leaderboard_tab">
+                                        <div class="tab_content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="alltime">
+                                                <div class="table-responsive">
+                                                    <!-- Leaderboard table -->
+                                                    <table class="table">
+
+                                                        <!-- Table heade -->
+                                                        <thead>
+                                                            <tr>
+                                                                <!-- Headers - column names -->
+                                                                <th scope="col">Rank</th>
+                                                                <th scope="col">Name</th>
+                                                                <th scope="col">EcoPoints &#127793;</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <!-- Table body -->
+                                                        <tbody>
+                                                            <!-- 1st row -->
+                                                            <tr>
+                                                                <th scope="row">4</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Raj Mane</span>
+                                                                </td>
+                                                                <td>350</td>
+                                                            </tr>
+
+                                                            <!-- 2nd row -->
+                                                            <tr>
+                                                                <th scope="row">5</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Aditi Sharma</span>
+                                                                </td>
+                                                                <td>320</td>
+                                                            </tr>
+
+                                                            <!-- 3rd row -->
+                                                            <tr>
+                                                                <th scope="row">6</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Priya Nair</span>
+                                                                </td>
+                                                                <td>20</td>
+                                                            </tr>
+
+                                                            <!-- 4th row -->
+                                                            <tr>
+                                                                <th scope="row">7</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Raj Mane</span>
+                                                                </td>
+                                                                <td>240</td>
+                                                            </tr>
+
+                                                            <!-- 5th row -->
+                                                            <tr>
+                                                                <th scope="row">8</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Kavya Reddy</span>
+                                                                </td>
+                                                                <td>200</td>
+                                                            </tr>
+
+                                                            <!-- 6th row -->
+                                                            <tr>
+                                                                <th scope="row">9</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Manish Gupta</span>
+                                                                </td>
+                                                                <td>190</td>
+                                                            </tr>
+
+                                                            <!-- 7th row -->
+                                                            <tr>
+                                                                <th scope="row">10</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Ramesh Iyer</span>
+                                                                </td>
+                                                                <td>170</td>
+                                                            </tr>
+
+                                                        </tbody>
+
+                                                    </table>
+                                                    <!-- table end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="load_more">
+                                        <a href="#">Load More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-         </div>
-        
-    </div>
-    <!-- Hero End -->
+                <!-- Leaderboard Content end -->
+        <!-- Hero End -->
 
         <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -318,10 +870,11 @@
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/owlcarousel/owl.cfarousel.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/Leaderboard.js"></script>
 
 </body>
 </html>
