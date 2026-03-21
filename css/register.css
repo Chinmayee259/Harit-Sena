@@ -1,0 +1,26 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+
+#image {
+  height: 100%;
+}
+
+#image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* full fill */
+  padding-top: 40px;
+  border-radius: 10%;
+  box-shadow: 4px black;
+
+}
+
+
+
