@@ -141,7 +141,7 @@
 
 /*** Hero Header ***/
 .hero-header {
-    margin-top: -100px;
+    margin-top: -80px;
     padding-top: 100px;
     background-size: cover;
     background-image: linear-gradient(-225deg, #fffeff 0%, #d7ffe6 100%);
