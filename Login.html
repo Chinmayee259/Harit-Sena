@@ -49,10 +49,14 @@
 
                                 <h6 class="mb-3">Login into your account</h6>
 
-                                <input type="email" class="form-control mb-3" placeholder="Email address">
-                                <input type="password" class="form-control mb-3" placeholder="Password">
+                                <!-- form start -->
+                                <form method="POST" action="#">
+                                        <input type="text" class="form-control mb-3" placeholder="Username" name="username" required>
+                                        <input type="password" class="form-control mb-3" placeholder="Password" name = "password" required>
 
-                                <button class="btn btn-success w-100 mb-3">Login</button>
+                                        <button class="btn btn-success w-100 mb-3" type="submit">Login</button>
+                                </form>
+                                <!-- form end -->
 
                                 <div>
                                     <a href="#" class="small text-muted">Forgot password?</a><br>
