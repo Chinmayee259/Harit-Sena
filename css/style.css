@@ -252,6 +252,11 @@
     color: #0b6b4f;
 }
 
+#log-in{
+    color: white;
+    background: #0b6b4f;
+}
+
 #log-in:hover{
     color: black;
     background: white;
@@ -622,65 +627,6 @@ h2 {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-}
-
-
-/* sidebar profile */
-.sidebar{
-    min-height: calc(100vh - 60px);
-    font-weight: 500;
-    padding: 0;
-    width: 235px;
-    z-index: 11;
-}
-
-.sidebar .nav:not(.sub-menu) {
-    margin-top: 1.45rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.sidebar .nav {
-    overflow: hidden;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    margin-bottom: 60px;
-}
-
- .sidebar .nav:not(.sub-menu) > .nav-item.active
- {
-    background: #0d6b68;
- }
-
- .sidebar .nav .nav-item.active
- {
-    border-radius: 8px;
- }
-
- .sidebar .nav:not(.sub-menu) > .nav-item {
-    margin-top: .2rem;
- }
-
- .sidebar .nav .nav-item {
-    -webkit-transition-duration: 0.25s;
-    -moz-transition-duration: 0.25s;
-    -o-transition-duration: 0.25s;
-    transition-duration: 0.25s;
-    transition-property: background;
-    -webkit-transition-property: background;
- }
-
- .sidebar ul li{
-    line-height: 1.8;
- }
-
-ul .active a .menu-title{
-    color: white;
- }
-
-.sidebar-border{
-    border: 0.2px solid black;
-    border-radius: 15px;
 }
 
 
