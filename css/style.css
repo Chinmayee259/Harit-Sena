@@ -232,7 +232,7 @@
     gap: 10px;
 }
 
-.btn{
+.impact-btn{
     flex: 1;
     padding: 10px;
     border: none;
@@ -252,13 +252,13 @@
     color: #0b6b4f;
 }
 
-.log-in:hover{
+#log-in:hover{
     color: black;
     background: white;
     border: 2px solid #0b6b4f;
 }
 
-.sign-up:hover{
+#sign-up:hover{
     color: white;
     background: #0b6b4f;
     border: 2px solid #0b6b4f;
