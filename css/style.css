@@ -893,5 +893,14 @@ body {
     border-radius: 24%;
 }
 
-
-
+/* index request form*/
+#pick-req
+{
+    height: 80px;
+    width:100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow:0 0 10px dimgray;
+    
+   
+}
