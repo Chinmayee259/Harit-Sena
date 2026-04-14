@@ -25,25 +25,6 @@
   </head>
   <body>
     <div class="container-scroller">
-      <!-- <div class="row p-0 m-0 proBanner" id="proBanner">
-        <div class="col-md-12 p-0 m-0">
-          <div class="card-body card-body-padding px-3 d-flex align-items-center justify-content-between">
-            <div>
-              <div class="d-flex align-items-center justify-content-between">
-                <p class="mb-0 font-weight-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
-                <a href="https://www.bootstrapdash.com/product/skydash-admin-template" target="_blank" class="btn me-2 buy-now-btn border-0">Buy Now</a>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="https://www.bootstrapdash.com/product/skydash-admin-template/"><i class="ti-home me-3 text-white"></i></a>
-              <button id="bannerClose" class="btn border-0 p-0">
-                <i class="ti-close text-white"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      
       <!-- partial:partials/_navbar.html -->
       <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <!-- Nav logo -->
@@ -52,102 +33,104 @@
           <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../img/harit_sena_logo.png" alt="logo" /></a>
         </div>
 
-  <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-    <!-- Toggle button -->
-    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-      <span class="icon-menu"></span>
-    </button>
+        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          <!-- Toggle button -->
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
 
-    <!-- Search bar -->
-    <ul class="navbar-nav mr-lg-2">
-      <li class="nav-item nav-search d-none d-lg-block">
-        <div class="input-group">
-          <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
-            <span class="input-group-text" id="search">
-              <i class="icon-search"></i>
-            </span>
-          </div>
-          <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
-        </div>
-      </li>
-    </ul>
-
-    <!-- Notifications -->
-    <ul class="navbar-nav navbar-nav-right">
-      <li class="nav-item dropdown">
-        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
-          <i class="icon-bell mx-0"></i>
-          <span class="count"></span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-          <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-          <a class="dropdown-item preview-item">
-            <div class="preview-thumbnail">
-              <div class="preview-icon bg-success">
-                <i class="ti-info-alt mx-0"></i>
+          <!-- Search bar -->
+          <ul class="navbar-nav mr-lg-2">
+            <li class="nav-item nav-search d-none d-lg-block">
+              <div class="input-group">
+                <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                  <span class="input-group-text" id="search">
+                    <i class="icon-search"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
               </div>
-            </div>
-            <div class="preview-item-content">
-              <h6 class="preview-subject font-weight-normal">Application Error</h6>
-              <p class="font-weight-light small-text mb-0 text-muted"> Just now </p>
-            </div>
-          </a>
-          <a class="dropdown-item preview-item">
-            <div class="preview-thumbnail">
-              <div class="preview-icon bg-warning">
-                <i class="ti-settings mx-0"></i>
-              </div>
-            </div>
-            <div class="preview-item-content">
-              <h6 class="preview-subject font-weight-normal">Settings</h6>
-              <p class="font-weight-light small-text mb-0 text-muted"> Private message </p>
-            </div>
-          </a>
-          <a class="dropdown-item preview-item">
-            <div class="preview-thumbnail">
-              <div class="preview-icon bg-info">
-                <i class="ti-user mx-0"></i>
-              </div>
-            </div>
-            <div class="preview-item-content">
-              <h6 class="preview-subject font-weight-normal">New user registration</h6>
-              <p class="font-weight-light small-text mb-0 text-muted"> 2 days ago </p>
-            </div>
-          </a>
-        </div>
-      </li>
-      <!-- Notifications end -->
+            </li>
+          </ul>
 
-      <!-- Profile pic  -->
-      <li class="nav-item nav-profile dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
-          <img src="assets/images/faces/face28.png" alt="profile" />
-        </a>
-        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-          <a class="dropdown-item">
-            <i class="ti-settings text-primary"></i> Settings </a>
-          <a class="dropdown-item">
-            <i class="ti-power-off text-primary"></i> Logout </a>
-        </div>
-      </li>
-      <!-- Profile pic end -->
+          <!-- Notifications -->
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                <i class="icon-bell mx-0"></i>
+                <span class="count"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="ti-info-alt mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                    <p class="font-weight-light small-text mb-0 text-muted"> Just now </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-warning">
+                      <i class="ti-settings mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">Settings</h6>
+                    <p class="font-weight-light small-text mb-0 text-muted"> Private message </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-info">
+                      <i class="ti-user mx-0"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                    <p class="font-weight-light small-text mb-0 text-muted"> 2 days ago </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <!-- Notifications end -->
 
-      <li class="nav-item nav-settings d-none d-lg-flex">
-        <a class="nav-link" href="#">
-          <i class="icon-ellipsis"></i>
-        </a>
-      </li>
-    </ul>
-    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-      <span class="icon-menu"></span>
-    </button>
-  </div>
+            <!-- Profile pic  -->
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+                <img src="assets/images/faces/face28.png" alt="profile" />
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item">
+                  <i class="ti-settings text-primary"></i> Settings </a>
+                <a class="dropdown-item">
+                  <i class="ti-power-off text-primary"></i> Logout </a>
+              </div>
+            </li>
+            <!-- Profile pic end -->
+
+            <li class="nav-item nav-settings d-none d-lg-flex">
+              <a class="nav-link" href="#">
+                <i class="icon-ellipsis"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+
       </nav>
       <!-- Nav end -->
 
 
       <!-- partial Nav -->
       <div class="container-fluid page-body-wrapper">
+
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
@@ -280,8 +263,10 @@
 
             <!-- Row 1 start -->
             <div class="row">
+
               <div class="col-md-12 grid-margin">
                 <!-- Internal row -->
+
                 <div class="row">
                   <!-- Part 1 -->
                   <div class="col-12 col-xl-8 mb-4 mb-xl-0">
@@ -303,9 +288,10 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
+
               </div>
+
             </div>
             <!-- Row 1 end -->
 
@@ -318,7 +304,8 @@
                   <div class="card-people mt-auto">
                     <img src="assets/images/dashboard/Leftcard.png" alt="people">
                     <div class="weather-info">
-                      <div class="d-flex">                        <div class="ms-2">
+                      <div class="d-flex">                        
+                        <div class="ms-2">
                           <h6 class="location font-weight-normal mb-2">&#127795; 120 Trees Planted</h6>
                           <h6 class="location font-weight-normal mb-2">&#129529; 85 Areas Cleaned</h6>
                           <h6 class="location font-weight-normal mb-2">&#128101; 200 Participants</h6>
@@ -334,6 +321,7 @@
 
                 <!-- Upper 2 cards -->
                 <div class="row">
+
                   <!-- card 1 -->
                   <div class="col-md-6 mb-4 stretch-card transparent">
                     <div class="card card-pale-mint">
@@ -355,6 +343,7 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
 
                 <!-- Lower 2 cards -->
@@ -388,7 +377,7 @@
             </div>
             <!-- Row 2 end -->
 
-            <!-- Row 3 start -->
+            <!-- Row 3 start bar graph new users and all-->
             <div class="row">
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
@@ -416,7 +405,10 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <!-- Row 3 end -->
+
+            <!-- Row 4 start Pie Chart-->
+            <!-- <div class="row">
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card position-relative">
                   <div class="card-body">
@@ -622,7 +614,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
+            <!-- Row 4 end -->
+
+            <!-- Row 5 start New Pickup request-->
             <div class="row">
               <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
@@ -702,6 +697,7 @@
                 </div>
               </div>
             </div>
+            <!-- Row 4 end -->
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
